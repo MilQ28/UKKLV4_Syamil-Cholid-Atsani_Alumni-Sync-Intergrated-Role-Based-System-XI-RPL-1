@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+  /* Auth Pages (Login/Register) */
+  .auth-bg {
+    flex-direction: row; /* Berdampingan */
+  }
+
+  .auth-left {
+    width: 40%;
+    padding: 40px;
+  }
+
+  .auth-left h1 {
+    font-size: 2rem;
+  }
+
+  .auth-right {
+    width: 60%;
+    padding: 40px;
+  }
+
+  /* Dashboard */
+  .stats-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  /* Navbar desktop (jika perlu penyesuaian) */
+  .navbar {
+    padding: 10px 30px;
+  }
+}
+
+/* Desktop Besar (Layar di atas 1024px) */
+@media (min-width: 1024px) {
+  .page-wrapper {
+    padding: 30px;
+  }
+}

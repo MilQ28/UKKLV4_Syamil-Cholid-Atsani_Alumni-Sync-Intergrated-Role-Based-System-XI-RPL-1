@@ -1,0 +1,120 @@
+.auth-bg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../img/bg-sekolah.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.auth-left {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.auth-left h1 {
+  font-size: 1.5rem;
+}
+
+/* FIX UKURAN LOGO DI LOGIN/REGISTER */
+.brand-logo img {
+  width: auto;
+  height: 40px;
+  object-fit: contain;
+  background-color: white;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.auth-left p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.auth-right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background-color: var(--white);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 500px; /* Diperlebar dari 360px agar form pendaftaran muat */
+}
+
+.auth-card-header h2 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.auth-card-header p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.auth-footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Layout Desktop */
+@media (min-width: 768px) {
+  .auth-bg {
+    flex-direction: row;
+  }
+
+  .auth-left {
+    width: 40%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    justify-content: flex-start;
+    padding: 60px 40px;
+    gap: 32px;
+  }
+
+  .auth-right {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .auth-card {
+    max-width: 550px;
+  }
+}

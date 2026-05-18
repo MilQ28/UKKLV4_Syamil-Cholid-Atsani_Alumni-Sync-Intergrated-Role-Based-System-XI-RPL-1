@@ -1,0 +1,167 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-outline {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+}
+
+/* Forms */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Tables */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  background-color: var(--white);
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid var(--border-color);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Badges & Tags */
+.badge,
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.badge-green {
+  background-color: #e5f9e5;
+  color: #008000;
+}
+.badge-amber {
+  background-color: #fffbeb;
+  color: #b45309;
+}
+.badge-red {
+  background-color: #ffe5e5;
+  color: #cc0000;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alert-error {
+  background-color: #ffe5e5;
+  color: #cc0000;
+  border: 1px solid #ffcccc;
+}
+
+.alert-success {
+  background-color: #e5f9e5;
+  color: #008000;
+  border: 1px solid #ccf2cc;
+}
+
+.toggle-pw {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.toggle-pw:active {
+  background-color: #565656;
+}
